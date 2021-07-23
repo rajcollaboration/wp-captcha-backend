@@ -71,7 +71,7 @@ module.exports = {
       *                                                                           *
       ****************************************************************************/
       adapter: 'sails-mongo',
-      url:'mongodb://dbWapchita:KPxFJegMupDEgPj1@cluster0-shard-00-01.gzft4.mongodb.net:27017/Osom?authSource=admin&appname=MongoDB%20Compass&ssl=true',
+      url:'mongodb://dbWapchita:KPxFJegMupDEgPj1@cluster0-shard-00-02.gzft4.mongodb.net:27017/Osom?authSource=admin&appname=MongoDB%20Compass&ssl=true',
       // url: 'mongodb://dbWapchita:KPxFJegMupDEgPj1@cluster0-shard-00-02.gzft4.mongodb.net:27017/Osom?authSource=admin&ssl=true&readPreference=secondary&autoReconnect=true',
       ssl: true,
       reconnectTries: Number.MAX_VALUE,
