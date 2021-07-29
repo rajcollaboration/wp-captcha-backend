@@ -61,7 +61,10 @@ module.exports = {
           })
       }
       
-      
+		if(message.senderName === ""){
+			message.senderName = "Auto";
+		}
+		
 		const sender = await Contact.findOrCreate(
 		{ author: message.author },
 		{
