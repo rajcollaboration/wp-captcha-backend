@@ -61,24 +61,15 @@ module.exports = {
           })
       }
       
-      let str = message.senderName;
-      if(str.length == 0 && str === ""){
-			const sender = await Contact.findOrCreate(
-			{ author: message.author },
-			{
-			  author: message.author,
-			  senderName: "Auto"
-			},
-		  );
-	  }else{
-			const sender = await Contact.findOrCreate(
-			{ author: message.author },
-			{
-			  author: message.author,
-			  senderName: message.senderName
-			},
-		  );
-	  }
+      
+		const sender = await Contact.findOrCreate(
+		{ author: message.author },
+		{
+		  author: message.author,
+		  senderName: message.senderName
+		},
+		);
+	 
 
       const messageAttributes = {
         id: message.id,
