@@ -25,6 +25,11 @@ module.exports = {
       type: 'string',
       required: false
     },
+    attachmentMsg: {
+      description: 'message attached to file',
+      type: 'string',
+      required: false
+    },
   },
 
   exits: {},
@@ -37,12 +42,14 @@ module.exports = {
     
     let method = 'sendMessage';
     let formData ={};
+    let attachedFileMessage = inputs.attachmentMsg || ''; 
     if(inputs.type && inputs.type=='doc'){
       method = 'sendFile';
       formData = {
         chatId: inputs.chatId,
         body: inputs.body,
-        filename:inputs.filename
+        filename:inputs.filename,
+        caption:attachedFileMessage
       }
     }else{
       formData = {
