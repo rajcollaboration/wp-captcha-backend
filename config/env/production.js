@@ -71,14 +71,14 @@ module.exports = {
       *                                                                           *
       ****************************************************************************/
       adapter: 'sails-mongo',
-      url:'mongodb://dbWapchita:SEh92wX7gf@cluster0-shard-00-02.6fdec.mongodb.net:27017/Osom?authSource=admin&appname=MongoDB%20Compass&ssl=true',
+      url:'mongodb://dbWapchita:SEh92wX7gf@cluster0-shard-00-01.6fdec.mongodb.net:27017/Osom?authSource=admin&appname=MongoDB%20Compass&ssl=true',
       ssl: true,
       reconnectTries: Number.MAX_VALUE,
       reconnectInterval: 1000
     },
 	bd2: {
 		adapter: require('sails-mongo'),
-		url:'mongodb://dbWapchita:SEh92wX7gf@cluster0-shard-00-01.6fdec.mongodb.net:27017/Osom?authSource=admin&appname=MongoDB%20Compass&ssl=true',
+		url:'mongodb://dbWapchita:SEh92wX7gf@cluster0-shard-00-02.6fdec.mongodb.net:27017/Osom?authSource=admin&appname=MongoDB%20Compass&ssl=true',
 		ssl: true,
 		reconnectTries: Number.MAX_VALUE,
 		reconnectInterval: 1000
